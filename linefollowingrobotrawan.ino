@@ -86,7 +86,7 @@ void loop() {
   || !ir1_s && ir2_s  && ir3_s && ir4_s&& !ir5_s 
   || ir1_s && !ir2_s  && ir3_s && !ir4_s&& ir5_s 
   || !ir1_s && !ir2_s  && ir3_s && !ir4_s&& !ir5_s 
-  || !ir1_s && ir2_s  && !ir3_s && ir4_s&& !ir5_s  //ortadaki beyaz + orta üçlü + ucu ignorla
+  || !ir1_s && ir2_s  && !ir3_s && ir4_s&& !ir5_s  
 ){
     straight(rightspeed,leftspeed);
   }
@@ -103,7 +103,7 @@ void loop() {
    !ir1_s && ir2_s  && ir3_s && !ir4_s&& ir5_s|| 
    !ir1_s && ir2_s  && ir3_s && !ir4_s&& !ir5_s|| 
    !ir1_s && ir2_s  && !ir3_s && !ir4_s&& ir5_s|| 
-   !ir1_s && ir2_s  && !ir3_s && !ir4_s&& !ir5_s){ // sağ taraf
+   !ir1_s && ir2_s  && !ir3_s && !ir4_s&& !ir5_s){ // Right side
     rightFlag=1;
     leftFlag=0;
   }
@@ -120,12 +120,12 @@ if(!ir1_s && ir2_s && !ir3_s && ir4_s&& ir5_s
   ||!ir1_s && !ir2_s && ir3_s && ir4_s&& !ir5_s
   ||!ir1_s && !ir2_s && ir3_s && !ir4_s&& ir5_s
   ||ir1_s && !ir2_s && !ir3_s && ir4_s&& !ir5_s
-  ||ir1_s && !ir2_s && ir3_s && ir4_s&& !ir5_s){ //sol taraf
+  ||ir1_s && !ir2_s && ir3_s && ir4_s&& !ir5_s){ //left side
     leftFlag=1;
     rightFlag=0; 
     }
 
-  if(ir1_s && ir2_s && ir3_s && ir4_s && ir5_s) { // hepsi beyaz: köşeyi geçti: hatırla || boşluk: ilerle
+  if(ir1_s && ir2_s && ir3_s && ir4_s && ir5_s) { // All white
     if(rightFlag && !leftFlag) {
       turn_right(rightspeed); 
     }
