@@ -4,3 +4,7 @@ Throughout this project, I solved multiple technical challenges, improved sensor
 I also empowered it with a sense of historical memory, allowing the system to learn from its previous experiences.
 
 ![Line following](https://github.com/user-attachments/assets/f1d4439b-c2a1-432c-b04a-520e58b81679)
+
+
+https://github.com/user-attachments/assets/96839589-0691-4c57-a61b-d91f1e94c89a
+
